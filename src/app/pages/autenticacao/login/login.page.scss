@@ -1,0 +1,20 @@
+ion-item{
+    --background: black;
+    --color: #fff;
+    margin-top: 25px;
+}
+
+ion-button{
+    margin-top: 25px;
+    margin-left: 15%;
+    width: 75%;
+}
+
+ion-row {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    display: block !important;
+    width: 35%;
+}

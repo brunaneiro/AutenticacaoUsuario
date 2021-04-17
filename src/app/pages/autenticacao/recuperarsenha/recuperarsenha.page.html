@@ -1,0 +1,19 @@
+<ion-content>
+  <form #form="ngForm">
+    <div style="text-align: center">
+      <h3>Recuperar Senha</h3>
+    </div>
+
+    <ion-item lines="full">
+      <ion-label position="floating">E-mail da Conta</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="recuperarSenha()" expand="block">Recuperar Senha</ion-button>
+        <ion-button (click)="sair()"  color="danger" expand="block">Voltar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

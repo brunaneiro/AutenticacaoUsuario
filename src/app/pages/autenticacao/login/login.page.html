@@ -1,0 +1,29 @@
+<ion-content>
+  <form #form="ngForm">
+    <ion-grid>
+      <ion-row>
+        <ion-img src="https://thumbs.gfycat.com/GrimyBetterAdder-small.gif"></ion-img>
+        <div style="text-align: center">
+          <h3>Login</h3>
+        </div>
+        <div>
+          <ion-item>
+            <ion-input name="user" type="text" placeholder="Usuário" ngModel required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input name="password" type="password" placeholder="Senha" ngModel required></ion-input>
+          </ion-item>
+        </div>
+        <div>
+          <ion-button color="success" (click)="logar()" type="submit" [disabled]="form.invalid">Login</ion-button>
+        </div>
+        <div>
+          <ion-button color="danger" (click)="registrarUsuario()" type="submit">Registrar Usuario</ion-button>
+        </div>
+        <div>
+          <ion-button fill="clear" (click)="recuperarSenha()" color="warning">Esqueci a senha!</ion-button>
+        </div>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

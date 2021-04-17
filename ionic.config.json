@@ -1,0 +1,7 @@
+{
+  "name": "sgAmbientes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

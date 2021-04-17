@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>Embarcados - Novo Sistema</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <form #form="ngForm" id="ngForm">
+      
+      <ion-row>
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label position="floating">Ip</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label position="floating">Porta</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      
+      <ion-item lines="full">
+        <ion-label position="floating">Descrição</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Firmware</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label position="floating">Status</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label position="floating">Modo de Comunicação</ion-label>
+            <ion-select okText="Confirmar" cancelText="Cancelar">
+              <ion-select-option value="Comportamental">Cliente</ion-select-option>
+              <ion-select-option value="Laboratorio">Roteador</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label position="floating">Ip - Embarcado</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label position="floating">MAC - Embarcado</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label position="floating">Ip - Gateway</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-item>
+        <ion-label position="floating">MQTT</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+
+      <ion-button color="danger" (click)="registrarSisEmb()" expand="block">Registrar Sistema Embarcado</ion-button>
+
+    </form>
+  </ion-grid>
+</ion-content>

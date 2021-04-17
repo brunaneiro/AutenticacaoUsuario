@@ -1,0 +1,21 @@
+ion-content {
+    display: flex;
+    align-items: center;
+}
+
+ion-grid {
+    margin-top: 3%;
+    width: 75%;
+}
+
+ion-item{
+    --background: black;
+    --color: #fff;
+    margin-top: 25px;
+}
+
+ion-button{
+    margin-top: 25px;
+    margin-left: 15%;
+    width: 75%;
+}

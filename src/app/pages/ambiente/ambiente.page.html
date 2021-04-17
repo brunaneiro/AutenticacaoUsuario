@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>Ambientes - Novo Ambiente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <form #form="ngForm" id="ngForm">
+      <ion-item lines="full">
+        <ion-label position="floating">Unidade</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Bloco</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Tipo de Ambiente</ion-label>
+        <ion-select okText="Confirmar" cancelText="Cancelar">
+          <ion-select-option value="Comportamental">Comportamental</ion-select-option>
+          <ion-select-option value="Laboratorio">Laboratório</ion-select-option>
+          <ion-select-option value="Auditório">Auditório</ion-select-option>
+          <ion-select-option value="Anfteatro">Anfteatro</ion-select-option>
+          <ion-select-option value="Administrativo">Administrativo</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label position="floating">Capacidade</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label w position="floating">Qntd. de Computadores</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item lines="full">
+            <ion-label position="floating">ipCamera</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-button color="danger" (click)="registrarAmbiente()" expand="block">Registrar Ambiente</ion-button>
+    </form>
+  </ion-grid>
+</ion-content>
